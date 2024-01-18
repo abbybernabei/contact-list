@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import ContactRow from "./ContactRow";
 
@@ -23,7 +24,7 @@ export default function ContactList() {
           <td>Email</td>
           <td>Phone</td>
         </tr>
-        {constacts.map((contact) => {
+        {contacts.map((contact) => {
           return <ContactRow key={contact.id} contact={contact} />;
         })}
       </tbody>
